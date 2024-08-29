@@ -112,7 +112,7 @@ The architecture of self-supervised DFER. This is reproduced based on the MAE-DF
 
 ### Visual-Language DFER
 
-![images/Figure_DFER_CLIP.png](images/Figure_DFER_CLIP.png)
+![images/DFER_CLIP.png](images/DFER_CLIP.png)
 
 The architecture of vision-language DFER. Figure is reproduced based on DFER-CLIP.
 
