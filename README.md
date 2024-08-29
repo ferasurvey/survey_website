@@ -74,6 +74,48 @@ The architecture of weak-supervised SFER. Figure is reproduced based on the Ada-
 
 The architecture of cross-modal SFER. Figure is reproduced based on the CEprompt.
 
+## Video-based Dynamic Facial Expression Recognition
+
+The video-based DFER involves analyzing facial expressions that change over time, necessitating a framework that effectively integrates spatial and temporal information. The core objective of DFER is to extract and learn the features of expression changes from video sequences or image sequences. Due to the complexity and diversity of input video or image sequences, DFER faces various task challenges. Based on different solution approaches, these challenges can be categorized into seven basic types: general DFER, sampling-based DFER, expression intensity-aware DFER, multi-modal DFER, static to dynamic FER, self-supervised DFER, and cross-modal DFER.
+
+### General DFER
+
+![images/generaldfer.png](images/generaldfer.png)
+
+The architecture of general DFER. Figure is reproduced based on (a) CNN-RNN based model (SAANet) and (b) the transformer-based model (EST).
+
+### Sampling-based DFER
+
+![images/fig9-Sampling-based_dfer_00.jpg](images/fig9-Sampling-based_dfer_00.jpg)
+
+The architecture of sampling-based DFER. Figure is reproduced based on explainable sampling (Freq-HD).
+
+### Expression Intensity-aware DFER
+
+Facial expressions are inherently dynamic, with intensity either gradually shifting from neutral to peak and back or abruptly transitioning from peak to neutral, making the accurate capture of these fluctuations essential for understanding expression dynamics.
+
+### Static to Dynamic FER
+
+The static to dynamic FER utilized the high-performance SFER knowledge to explore appearance features and dynamic dependencies.
+
+### Multi-modal DFER
+
+![images/multi_modal_fusion_dfer.png](images/multi_modal_fusion_dfer.png)
+
+The architecture of multi-modal DFER. Figure is reproduced based on the fusion-based model (T-MEP).
+
+### Self-supervised DFER
+
+![images/Self_supervised_DFER_00.jpg](images/Self_supervised_DFER_00.jpg)
+
+The architecture of self-supervised DFER. This is reproduced based on the MAE-DFER.
+
+### Visual-Language DFER
+
+![images/Figure_DFER_CLIP.png](images/Figure_DFER_CLIP.png)
+
+The architecture of vision-language DFER. Figure is reproduced based on DFER-CLIP.
+
 ## Citation
 
 If you find our work useful, please cite our paper:
