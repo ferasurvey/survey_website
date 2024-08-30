@@ -146,6 +146,8 @@ The architecture of vision-language DFER. Figure is reproduced based on DFER-CLI
 
 ## RECENT ADVANCES OF FER ON BENCHMARK DATASETS
 
+Performance (WAR) of image-based SFER and video-based DFER methods on four in-the-lab datasets：
+
 | **Method** | **Year** | **Type**  | **Backbone** | **MMI** | **CK+** | **Oulu-CASIA** |
 |------------|----------|-----------|--------------|---------|---------|----------------|
 | [IL-VGG](https://doi.org/10.1109/CVPR.2018.00392)     | 2018 | Static   | VGG-16       | 74.68   | 91.64   | 84.58          |
@@ -161,7 +163,7 @@ The architecture of vision-language DFER. Figure is reproduced based on DFER-CLI
 | [DPCNet](https://doi.org/10.1109/TCSVT.2022.3200827)    | 2022 | Dynamic  | CNN          | -       | 99.70   | -              |
 | [STACM](https://doi.org/10.1109/ICCV.2023.01297)        | 2023 | Dynamic  | CNN          | 82.71   | 99.08   | 91.25          |
 
-Performance (WAR) of image-based SFER and video-based DFER methods on four in-the-lab datasets.
+Performance (WAR) of image-based SFER methods on three in-the-wild datasets：
 
 | **Task Challenges** | **Method** | **Year** | **Backbone** | **SFEW** | **RAF-DB** | **AffectNet** |
 |---------------------|------------|----------|--------------|----------|------------|---------------|
@@ -198,7 +200,7 @@ Performance (WAR) of image-based SFER and video-based DFER methods on four in-th
 |  | [VTA-Net](https://doi.org/10.1109/CVPR.2024.00472) | 2024 | ResNet-18 | - | 72.17 | - |
 |  | [CEPrompt](https://doi.org/10.1109/CVPR.2024.00512) | 2024 | ViT-B/16 | - | 92.43 | 67.29 |
 
-Performance (WAR) of image-based SFER methods on three in-the-wild datasets.
+Performance (Accuracy) of 3D SFER methods on BU-3DE and Bosphorus datasets：
 
 | **Method** | **Year** | **Backbone** | **Modality** | **BU-3DE** | **Bosphorus** |
 |------------|----------|--------------|--------------|------------|---------------|
@@ -209,7 +211,7 @@ Performance (WAR) of image-based SFER methods on three in-the-wild datasets.
 | [CMANet](https://doi.org/10.1109/ICCV.2022.00129) | 2022 | VGGNet16 | 2D+3D/3D | 90.24/84.03 | 89.36/81.25 |
 | [DrFER](https://doi.org/10.1109/CVPR.2024.00431) | 2024 | ResNet18 | -/3D | -/89.15 | -/86.77 |
 
-Performance (Accuracy) of 3D SFER methods on BU-3DE and Bosphorus datasets
+Performance (WAR) of cross-domain SFER methods on four widely-used datasets：
 
 | **Method** | **Year** | **Backbone** | **Source Dataset** | **JAFFE** | **CK+** | **FER-2013** | **AffectNet** |
 |------------|----------|--------------|--------------------|-----------|---------|--------------|---------------|
@@ -220,7 +222,7 @@ Performance (Accuracy) of 3D SFER methods on BU-3DE and Bosphorus datasets
 | [DMSRL](https://doi.org/10.1109/TPAMI.2023.3210668) | 2023 | VGGNet16 | RAF-DB2.0 | 69.48 | 91.26 | 56.16 | 50.94 |
 | [CSRL](https://doi.org/10.1109/TPAMI.2023.3210668) | 2023 | ResNet18 | RAF-DB | 66.67 | 88.37 | 55.53 | - |
 
-Performance (WAR) of cross-domain SFER methods on four widely-used datasets
+Performance (WAR/UAR) of video-based DFER methods on four widely-used datasets. TI: Time Interpolation; DS: Dynamic Sampling; GWS: Group-weighted Sampling. *: Tunable Param (M)：
 
 | **Task Challenges** | **Method** | **Year** | **Sample Strategies** | **Backbone** | **Complexity (GFLOPs)** | **AFEW (WAR/UAR)** | **DFEW (WAR/UAR)** | **FERV39k (WAR/UAR)** | **MAFW (WAR/UAR)** |
 |---------------------|------------|----------|-----------------------|--------------|-------------------------|--------------------|--------------------|----------------------|--------------------|
@@ -254,7 +256,6 @@ Performance (WAR) of cross-domain SFER methods on four widely-used datasets
 |  | [UMBEnet](https://doi.org/10.1109/TPAMI.2024.3183745) | 2024 | DS | CLIP | - | - | 73.93/64.55 | 52.10/44.01 | 57.25/46.92 |
 |  | [FineCLIPER](https://doi.org/10.1109/TPAMI.2024.3189421) | 2024 | DS | CLIP-ViT-B/16 | 20M\* | - | 76.21/65.98 | 53.98/45.22 | 56.91/45.01 |
 
-Performance (WAR/UAR) of video-based DFER methods on four widely-used datasets. TI: Time Interpolation; DS: Dynamic Sampling; GWS: Group-weighted Sampling. *: Tunable Param (M)
 
 ## Citation
 
