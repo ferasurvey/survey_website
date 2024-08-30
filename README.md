@@ -18,6 +18,36 @@ Taxonomy of FER of static and dynamic emotions. We present a hierarchical taxono
 
 Image-based static facial frames (Above) and video-based dynamic facial sequences (Below) of seven basic emotions in the lab and wild. Samples are from (a) JAFFE, (b) CK+, (c) SFEW, (d) ExpW, (e) RAF-DB, (f) AffectNet, (g) EmotioNet, (h) CK+, (i) Oulu-CASIA, (j) DFEW, (k) FERV39k, and (l) MAFW.
 
+### Video-based DFER Datasets
+
+| **Categories**          |                | **Datasets**                                                                                                     | **Year** | **ECT** | **Emotion**                | **Training Numbers** | **Testing Numbers** |
+|-------------------------|----------------|------------------------------------------------------------------------------------------------------------------|----------|----------|----------------------------|----------------------|---------------------|
+| **Modality**             | **Scene**      |                                                                                                                  |          |          |                            |                      |                     |
+| **Image-based SFER Datasets** | **Lab**         | [JAFFE](http://www.kasrl.org/jaffe.html)                                                                          | 1998     | P        | Sev                        | 213                  | 213                 |
+|                         |                | [CK+](http://vasc.ri.cmu.edu/idb/html/face/facial_expression/)                                                    | 2010     | P/I      | Sev                        | 241                  | 241                 |
+|                         |                | [MMI](https://mmifacedb.eu/)                                                                                      | 2010     | P        | Sev                        | 370                  | 370                 |
+|                         |                | [Oulu-CASIA](http://www.cse.oulu.fi/CMV/Downloads/Oulu-CASIA)                                                     | 2011     | P        | Sev                        | 720                  | 240                 |
+|                         |                | [RaFD](https://rafd.socsci.ru.nl/?p=main)                                                                         | 2010     | P        | Sev, C                     | 1,448                | 160                 |
+|                         | **Wild**        | [FER-2013](https://medium.com/@birdortyedi_23820/deep-learning-lab-episode-3-fer2013-c38f2e052280)                | 2013     | P/I      | Sev                        | 28,709               | 3,589               |
+|                         |                | [SFEW 2.0](https://cs.anu.edu.au/few/)                                                                            | 2011     | P/I      | Sev                        | 958                  | 436                 |
+|                         |                | [EmotioNet](http://www.pitt.edu/~emotion/downloads.html)                                                          | 2016     | P/I      | Sev, C                     | 80,000               | 20,000              |
+|                         |                | [RAF-DB](http://www.whdeng.cn/raf/model1.html)                                                                    | 2017     | P/I      | Sev, Com                   | 12,271               | 3,068               |
+|                         |                | [AffectNet](http://mohammadmahoor.com/affectnet/)                                                                 | 2017     | P/I      | Sev, Con.                  | 283,901              | 3,500               |
+|                         |                | [ExpW](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html)                                           | 2017     | P/I      | Sev                        | 75,048               | 16,745              |
+|                         | **Lab (3D)**    | [BU-3DFE](https://www.cs.binghamton.edu/~lijun/Research/3DFE/3DFE_Analysis.html)                                  | 2006     | P        | Sev                        | 2,000                | 500                 |
+|                         |                | [Bosphorus](http://bosphorus.ee.boun.edu.tr/)                                                                     | 2008     | P        | Sev                        | 2,326                | 2,326               |
+|                         |                | [4DFAB](https://ibug.doc.ic.ac.uk/resources/4dfab/)                                                               | 2018     | P/I      | Sev                        | 1,440k               | 360k                |
+| **Video-based DFER Datasets** | **Lab**         | [CK+](http://vasc.ri.cmu.edu/idb/html/face/facial_expression/)                                                    | 2010     | P/I      | Sev                        | 241                  | 241                 |
+|                         |                | [MMI](https://mmifacedb.eu/)                                                                                      | 2010     | P/I      | Sev                        | 1,450                | 1,450               |
+|                         |                | [Oulu-CASIA](http://www.cse.oulu.fi/CMV/Downloads/Oulu-CASIA)                                                     | 2011     | P        | Six                        | 2,160                | 720                 |
+|                         | **Wild**        | [AFEW 8.0](https://cs.anu.edu.au/few/AFEW.html)                                                                   | 2011     | P/I      | Sev                        | 773                  | 383                 |
+|                         |                | [CAER](https://caer-dataset.github.io/)                                                                           | 2019     | P/I      | Sev                        | 9,240                | 2,640               |
+|                         |                | [DFEW](https://dfew-dataset.github.io/)                                                                           | 2020     | P/I      | Sev                        | 12,000               | 3,000               |
+|                         |                | [FERV39k](https://wangyanckxx.github.io/Proj_CVPR2022_FERV39k.html)                                               | 2022     | P/I      | SE                         | 35,887               | 3,000               |
+|                         |                | [MAFW](https://mafw-database.github.io/MAFW/)                                                                     | 2022     | P/I      | Sev, C, A, D, H, Com        | 8,036                | 2,009               |
+
+Summary of the in-the-lab or in-the-wild datasets with static and dynamic emotions for FER training and evaluation. ECT: Elicitation; P: Posed; I: Instinctive; Sev: Seven Emotions (Happy, Angry, Surprise, Fear, Sad, Disgust, Neutral); C: Contempt; A: Anxiety;  D: Disappointment; H: Helplessness; Com: Compound.
+
 ## Workflow of Generic Facial Expression Recognition
 
 ![images/Workflow.jpg](images/Workflow.jpg)
@@ -58,7 +88,7 @@ Compound emotions refer to complex emotional states formed by the combination of
 
 ### Cross-domain SFER
 
-![images/crossdomain_sfer.png](images/crossdomain_sfer.png)
+![images/crossdomain_sfer.jpg](images/crossdomain_sfer.jpg)
 
 The architecture of cross-domain SFER. Figure is reproduced based on (a) the transfer learning-based model (CSRL) and (b) the adaption learning-based model (AGRA).
 
